@@ -1,8 +1,6 @@
 # Golang_PricingEngine
 
-## Qué hace este proyecto
-
-Es un **servicio de motor de precios** para escenarios de envío de dinero (transferencias internacionales u online). Recibe por HTTP el contexto de una cotización — país y moneda de origen, país y moneda de destino, partner comercial, opcionalmente estado de origen, estilo de precio (por ejemplo menor comisión, entrega rápida, mejor tasa), forma de recepción del beneficiario, pagador, montos y tipo de forma de pago del envío — y devuelve:
+Servicio de motor de precios para escenarios de envío de dinero (transferencias internacionales u online). Recibe por HTTP el contexto de una cotización — país y moneda de origen, país y moneda de destino, partner comercial, opcionalmente estado de origen, estilo de precio (por ejemplo menor comisión, entrega rápida, mejor tasa), forma de recepción del beneficiario, pagador, montos y tipo de forma de pago del envío — y devuelve:
 
 - **Comisiones** desglosadas y disponibilidad por método de pago del remitente (ACH, tarjeta débito, tarjeta crédito).
 - **Tipo de cambio** aplicable (tasa, base, monto destino estimado) cuando hay monto origen.
